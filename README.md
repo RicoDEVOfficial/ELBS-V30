@@ -3,7 +3,7 @@
 
 A simple Brawl Stars v30.242 server emulator written in Python.
 
-![Screenshot](screenshot.png)
+![Screenshot](icon.jpg)
 
 ---
 
