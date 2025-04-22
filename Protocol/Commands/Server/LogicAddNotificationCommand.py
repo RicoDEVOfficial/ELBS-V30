@@ -1,6 +1,7 @@
 from ByteStream.Writer import Writer
 from Utils.Helpers import Helpers
 import time
+
 class LogicAddNotificationCommand(Writer):
 
     def encode(self, message):

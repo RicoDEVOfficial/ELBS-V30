@@ -26,8 +26,8 @@ class Player:
     tickets = settings['Tickets']
     gems = settings['Gems']
     resources = [{'ID': 1, 'Amount': settings['BrawlBoxTokens']}, {'ID': 8, 'Amount': settings['Gold']}, {'ID': 9, 'Amount': settings['BigBoxTokens']}, {'ID': 10, 'Amount': settings['StarPoints']}]
-    high_trophies = 999999
-    trophy_reward = 300
+    high_trophies = 0
+    trophy_reward = 1
     exp_points = settings['ExperiencePoints']
     profile_icon = 0
     name_color = 0

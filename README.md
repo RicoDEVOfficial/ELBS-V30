@@ -4,7 +4,7 @@
 
 A simple Brawl Stars v30.242 server emulator written in Python.
 
-![Screenshot](icon.jpg)
+![Screenshot](Images/icon.jpg)
 
 ---
 
@@ -13,6 +13,10 @@ A simple Brawl Stars v30.242 server emulator written in Python.
 - **Python 3.7+** (PC) or **Pydroid 3** (Android)  
 - **colorama** → `pip install colorama`  
 - **TinyDB** → `pip install tinydb`
+
+## In‑game Screenshots
+
+![Screenshot](Images/load.jpg)
 
 ---
 
@@ -49,7 +53,7 @@ To play, you need a patched client. Choose one of the following:
 
 ## Need Help?
 
-Join our Discord for support and updates:
+Join our Channels for support and updates:
 
 - [YouTube](https://youtube.com/@ricodev4129)  
 - [Telegram](https://t.me/ricosmoddingstudio)

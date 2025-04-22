@@ -1,7 +1,7 @@
 from ByteStream.Reader import Reader
 from Utils.Helpers import Helpers
 from Logic.Home.LogicShopData import LogicShopData
-from Protocol.Messages.Server.AvailableServerCommandMessage import AvailableServerCommandMessage
+from Protocol.Messages.Server.Other.AvailableServerCommandMessage import AvailableServerCommandMessage
 
 class LogicGatchaCommand(Reader):
     def __init__(self, client, player, initial_bytes):

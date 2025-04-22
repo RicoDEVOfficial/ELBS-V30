@@ -1,7 +1,7 @@
 from Logic.Home.LogicDailyData import LogicDailyData
 from Logic.Home.LogicConfData import LogicConfData
 import random, json, time
-from DataBase.MongoDB import MongoDB
+from DataBase.DBManager import DBManager
 
 class LogicClientHome:
 

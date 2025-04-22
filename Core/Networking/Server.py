@@ -3,9 +3,9 @@
 import json
 import socket
 from Utils.Helpers import Helpers
-from DataBase.MongoDB import MongoDB  # This still works and uses TinyDB now!
+from DataBase.DBManager import DBManager  # import update to database after new name
 from Core.Networking.ClientThread import ClientThread
-from Protocol.Messages.Server.LoginFailedMessage import LoginFailedMessage
+from Protocol.Messages.Server.Login.LoginFailedMessage import LoginFailedMessage
 
 def _(*args):
     for arg in args:
@@ -19,7 +19,7 @@ class Server:
         self.config = json.loads(open('config.json', 'r').read())
 
         # MongoDB class now uses TinyDB internally
-        self.db = MongoDB(self.config.get('MongoConnectionURL'))  # The param is ignored internally if not needed
+        self.db = DBManager(self.config.get('DatabasePath'))  # The param is ignored internally if not needed
 
         self.server = socket.socket()
         self.port = port

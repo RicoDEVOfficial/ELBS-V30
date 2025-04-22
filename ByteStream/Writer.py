@@ -1,7 +1,7 @@
 import os
 import json
 from Utils.Helpers import Helpers
-from DataBase.MongoDB import MongoDB
+from DataBase.DBManager import DBManager
 
 class Writer:
     def __init__(self, client, endian: str = 'big'):
@@ -32,7 +32,7 @@ class Writer:
                 print(f"{Helpers.red}[WARNING] Could not create DB directory {db_dir}: {e}")
 
         # Initialize TinyDB via our MongoDB adapter
-        self.db = MongoDB(conn_str)
+        self.db = DBManager(conn_str)
 
     def writeInt(self, data, length = 4):
         self.buffer += data.to_bytes(length, self.endian, signed=True)
