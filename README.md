@@ -49,7 +49,8 @@ To play, you need a patched client. Choose one of the following:
 ## Need Help?
 
 Join our Discord for support and updates:  
-[https://discord.gg/your-invite-code](https://discord.gg/your-invite-code)
+[Telegram](https://t.me/ricosmoddingstudio)
+[YouTube](https://youtube.com/@ricodev4129)
 
 ---
 
