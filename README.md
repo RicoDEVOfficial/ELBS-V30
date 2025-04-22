@@ -31,7 +31,7 @@ To play, you need a patched client. Choose one of the following:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RicoTheModder/ELBS-V30.git
+   git clone https://github.com/RicoDEVOfficial/ELBS-V30.git
    cd ELBS-V30
    ```
 
