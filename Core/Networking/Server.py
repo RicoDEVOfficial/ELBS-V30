@@ -1,3 +1,5 @@
+# server core patch so it works with tinydb now
+
 import json
 import socket
 from Utils.Helpers import Helpers
