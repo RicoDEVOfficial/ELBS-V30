@@ -1,3 +1,5 @@
+# Database rewrite in tinydb
+
 import sys
 import datetime
 import json
