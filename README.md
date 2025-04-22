@@ -1,7 +1,6 @@
-
 # Elixir Brawl Server (ELBS‑V30)
 
-## ⚠️ WARNING ⚠️ This server is currently broken (game stuck at %92), we are trying to fix it currently
+## ⚠️ WARNING ⚠️ This server is currently broken (game stuck at 92%), we are trying to fix it currently
 
 A simple Brawl Stars v30.242 server emulator written in Python.
 
@@ -22,7 +21,7 @@ A simple Brawl Stars v30.242 server emulator written in Python.
 To play, you need a patched client. Choose one of the following:
 
 - [Classic Brawl APK](https://mega.nz/file/lqNFEbhL#cvEVCoNg7ufDFRvnzhr68AL3zeHlOQpajZLKcWu9PPE)  
-- [ELBS V30 Open-Scripted Client (soon)](https//www.google.com)
+- [ELBS V30 Open-Scripted Client (soon)](https://www.google.com)
 
 > *Replace IP inside `libcb.config.so` with `127.0.0.1` for local use or your network IPv4 for LAN play.*
 
@@ -50,9 +49,10 @@ To play, you need a patched client. Choose one of the following:
 
 ## Need Help?
 
-Join our Discord for support and updates:  
-[Telegram](https://t.me/ricosmoddingstudio)
-[YouTube](https://youtube.com/@ricodev4129)
+Join our Discord for support and updates:
+
+- [YouTube](https://youtube.com/@ricodev4129)  
+- [Telegram](https://t.me/ricosmoddingstudio)
 
 ---
 
