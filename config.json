@@ -1,0 +1,23 @@
+{
+  "DatabasePath": "DataBase/Data/GameData.json",
+
+  "StarPoints": 5000,
+  "Tickets": 7000,
+  "Gold": 10000,
+  "Gems": 100000,
+  "Trophies": 0,
+  "ExperiencePoints": 999999,
+  "BrawlBoxTokens": 99999,
+  "BigBoxTokens": 99999,
+  "Region": "RU",
+  "ThemeID": 0,
+  "ContentCreatorCodes": "Brawl v30 i guess",
+  "BannedIPs": [],
+  "Maintenance": false,
+  "SecondsTillMaintenanceOver": 3600,
+  "Patch": false,
+  "DoubleTokenEvent": true,
+  "CoinShowerEvent": true,
+  "PatchURL": "http://192.168.0.104:8080/",
+  "UpdateURL": ""
+}
