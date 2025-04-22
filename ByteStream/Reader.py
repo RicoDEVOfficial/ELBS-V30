@@ -1,5 +1,6 @@
-from io import BufferedReader, BytesIO
+# Reader Patch, now works with tinydb 
 
+from io import BufferedReader, BytesIO
 
 class Reader(BufferedReader):
     def __init__(self, initial_bytes, endian: str = 'big'):
