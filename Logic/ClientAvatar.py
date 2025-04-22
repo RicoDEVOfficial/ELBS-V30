@@ -59,10 +59,7 @@ class LogicClientAvatar:
             self.writeDataReference(16, x)
             self.writeVInt(self.player.brawlers_level[str(x)])
 
-        self.writeVInt(3000)
-        for x in range(3000):
-            self.writeDataReference(23, x)
-            self.writeVInt(1)
+        self.writeVInt(0)  # No Gadgets
 
         self.writeVInt(0)  # New Brawlers Array
         for x in range(0):
