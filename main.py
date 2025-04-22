@@ -14,7 +14,7 @@ def main():
 
     Server("0.0.0.0", 9339).start()
 
-print (" BS 30.242 Server by BreadDEV, converted to TinyDB by  RicoDEV, This server is broken, \n Game stuck at %92 also, packet id 10100 \n is Always unahndled  which i think is \n the cause of the error")
+print ("Welcome to ELBS-v30!")
 
 if __name__ == '__main__':
     main()
