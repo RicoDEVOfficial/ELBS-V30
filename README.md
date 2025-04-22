@@ -19,8 +19,8 @@ A simple Brawl Stars v30.242 server emulator written in Python.
 
 To play, you need a patched client. Choose one of the following:
 
-- [ELBS V30 Default Client](https://example.com/default-client.apk)  
-- [ELBS V30 No-Tutorial Client](https://example.com/no-tutorial-client.apk)
+- [Classic Brawl APK](https://mega.nz/file/lqNFEbhL#cvEVCoNg7ufDFRvnzhr68AL3zeHlOQpajZLKcWu9PPE)  
+- [ELBS V30 Open-Scripted Client (soon)](google.com)
 
 > *Replace IP inside `libcb.config.so` with `127.0.0.1` for local use or your network IPv4 for LAN play.*
 
