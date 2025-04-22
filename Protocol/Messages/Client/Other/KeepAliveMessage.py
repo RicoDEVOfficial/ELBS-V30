@@ -13,4 +13,3 @@ class KeepAliveMessage(Reader):
 
     def process(self, db):
         KeepAliveOkMessage(self.client, self.player).send()
-        LobbyInfoMessage(self.client, self.player).send()
