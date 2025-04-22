@@ -23,7 +23,7 @@ To play, you need a patched client. Choose one of the following:
 - [Classic Brawl APK](https://mega.nz/file/lqNFEbhL#cvEVCoNg7ufDFRvnzhr68AL3zeHlOQpajZLKcWu9PPE)  
 - [ELBS V30 Open-Scripted Client (soon)](https://www.google.com)
 
-> *Replace IP inside `libcb.config.so` with `127.0.0.1` for local use or your network IPv4 for LAN play.*
+> *Replace IP inside `libmg.config.so` or `librico.so` with `127.0.0.1` for local use or your network IPv4 for LAN play.*
 
 ---
 
