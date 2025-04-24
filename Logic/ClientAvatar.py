@@ -25,11 +25,13 @@ class LogicClientAvatar:
         for x in self.player.brawlers_unlocked:
             self.player.brawlers_card_id.append(Cards().get_unlock_by_brawler_id(x))
 
+        # Unlocked Brawlers & Resources array
         self.writeVInt(len(self.player.resources) + len(self.player.brawlers_card_id))
 
         for x in self.player.brawlers_card_id:
             self.writeDataReference(23, x)
             self.writeVInt(1)
+
         for resource in self.player.resources:
             self.writeDataReference(5, resource['ID'])
             self.writeVInt(resource['Amount'])
@@ -59,8 +61,8 @@ class LogicClientAvatar:
             self.writeDataReference(16, x)
             self.writeVInt(self.player.brawlers_level[str(x)])
 
-        self.writeVInt(0)
-        for x in range(0):
+        self.writeVInt(len(self.player.brawlers_spg))
+        for x in self.player.brawlers_spg:
             self.writeDataReference(23, x)
             self.writeVInt(1)
 
@@ -83,4 +85,3 @@ class LogicClientAvatar:
         self.writeVInt(0)
 
         self.writeVInt(2) # Tutorial State
-        

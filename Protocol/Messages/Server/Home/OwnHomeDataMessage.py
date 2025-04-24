@@ -12,9 +12,10 @@ class OwnHomeDataMessage(Writer):
         self.time_stamp = int(datetime.timestamp(datetime.now()))
 
     def encode(self):
-
+        print("[OHDDEBUG] -> OwnHomeDataMessage.encode start")
         LogicClientHome.encode(self)
+        print("[OHDDEBUG] after LogicClientHome")
         LogicClientAvatar.encode(self)
-
+        print("[OHDDEBUG] after LogicClientAvatar")
         self.writeVInt(self.time_stamp)
-
+        print("[OHDDEBUG] <- OwnHomeDataMessage.encode end")

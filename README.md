@@ -1,6 +1,6 @@
 # Elixir Brawl Server (ELBS‑V30)
 
-## ⚠️ WARNING ⚠️ This server is currently broken (game stuck at 92%), we are trying to fix it currently
+## ⚠️ WARNING ⚠️ This server is currently broken (crash after %100), we are trying to fix it currently
 
 A simple Brawl Stars v30.242 server emulator written in Python.
 

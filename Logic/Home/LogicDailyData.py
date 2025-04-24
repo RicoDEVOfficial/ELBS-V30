@@ -37,16 +37,16 @@ class LogicDailyData:
             self.writeDataReference(0,0)
 
         self.writeVInt(0)      # Leaderboard Global TID
-        self.writeVInt(self.player.high_trophies)  # Trophy Road Reached Icon
+        self.writeVInt(50000)  # Trophy Road Reached Icon
         self.writeVInt(0)      # Unknown
         self.writeVInt(0)      # Unknown
 
         self.writeUInt8(0)     # Is Token Limit Reached
 
         self.writeVInt(self.player.token_doubler)
-        self.writeVInt(0)  # Trophy Road Timer
+        self.writeVInt(99999)  # Trophy Road Timer
         self.writeVInt(0)      # Power Play Timer
-        self.writeVInt(0)  # Brawl Pass Timer
+        self.writeVInt(99999)  # Brawl Pass Timer
 
         self.writeVInt(0)  # Unknown
 
@@ -61,7 +61,6 @@ class LogicDailyData:
 
         self.writeVInt(0) # Name Change Cost
         self.writeVInt(0) # Name Change Timer
-
 
         LogicShopData.encodeShopOffers(self)
 
@@ -78,7 +77,7 @@ class LogicDailyData:
         for x in range(0):
             self.writeVInt(x)
 
-        self.writeVInt(1)
+        self.writeVInt(0)
         self.writeVInt(0)  # Unknown
 
         self.writeDataReference(16, self.player.home_brawler)
@@ -100,17 +99,17 @@ class LogicDailyData:
         self.writeVInt(1)  # BrawlPassSeasonData
         for x in range(1):
             self.writeVInt(2)  # Current Season
-            self.writeVInt(-64)  # Pass Tokens
-            self.writeBool(True) # Pass Activated
-            self.writeVInt(0)  # Pass Progress
-
-            self.writeUInt8(1)
-            for i in range(4):
-                self.writeInt(0)
+            self.writeVInt(0)  # Pass Tokens
+            self.writeBool(self.player.bp_activated)
+            self.writeVInt(2)  # Pass Progress
 
             self.writeInt8(1)
             for i in range(4):
-                self.writeInt(0)
+                self.writeInt(4)
+
+            self.writeInt8(1)
+            for i in range(4):
+                self.writeInt(4)
 
         self.writeVInt(0)  # ProLeagueSeasonData
         for x in range(0):
@@ -124,16 +123,16 @@ class LogicDailyData:
                 self.writeVInt(0)     # Unknown
                 self.writeVInt(0)     # Unknown
                 self.writeVInt(1)     # Mission Type
-                self.writeVInt(0)     # Achieved Goal
-                self.writeVInt(1)     # Quest Goal
-                self.writeVInt(500)    # Tokens Reward
+                self.writeVInt(2)     # Achieved Goal
+                self.writeVInt(8)     # Quest Goal
+                self.writeVInt(10)    # Tokens Reward
                 self.writeVInt(0)     # Unknown
                 self.writeVInt(0)     # Current level
-                self.writeVInt(5)     # Max level
-                self.writeVInt(1)     # Quest Type [0 = Season quest, 1 = Daily Quest]
-                self.writeUInt8(6)    # Quest State
-                self.writeDataReference(0, 0) # Quest Brawler
-                self.writeVInt(18)     # GameMode
+                self.writeVInt(0)     # Max level
+                self.writeVInt(1)     # Quest Type
+                self.writeUInt8(2)    # Quest State
+                self.writeDataReference(16, 0)
+                self.writeVInt(0)     # GameMode
                 self.writeVInt(0)     # Unknown
                 self.writeVInt(0)     # Unknown
 
@@ -146,4 +145,3 @@ class LogicDailyData:
                 self.writeVInt(1)     # Unknown
                 self.writeVInt(1)     # Unknown
                 self.writeVInt(1)     # Unknown
-

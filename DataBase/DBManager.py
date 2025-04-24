@@ -51,7 +51,7 @@ class DBManager:
             'TokenDoubler': 0,
             'HighestTrophies': 0,
             'HomeBrawler': 0,
-            'TrophyRoadReward': 1,
+            'TrophyRoadReward': 300,
             'ExperiencePoints': Player.exp_points,
             'ProfileIcon': 0,
             'NameColor': 0,
